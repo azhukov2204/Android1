@@ -1,88 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
+    <!-- В этом поле для теста применю параметр ems для настройки ширины поля -->
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="wrap_content"
+        android:ems="10"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="5dp"
-        android:fontFamily="casual"
-        android:text="@string/textViewExampleText"
-        android:textAlignment="center"
+        android:hint="@string/enterTextHint"
+        android:inputType="text"
         android:padding="5dp"
-        android:textColor="@color/teal_200"
         android:textSize="25sp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editTextPersonName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="5dp"
-        android:fontFamily="sans-serif"
-        android:inputType="textShortMessage"
-        android:text="@string/editTextExampleText"
-        android:textColor="@color/purple_200"
+        android:hint="@string/enterNameHint"
+        android:inputType="textPersonName"
         android:padding="5dp"
-        android:textSize="25sp"
-        android:importantForAutofill="no" />
-
-    <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/switch1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="5dp"
-        android:checked="true"
-        android:padding="5dp"
-        android:text="@string/switchCompatExampleText"
-        android:textColor="@color/blue"
         android:textSize="25sp" />
 
-    <CheckBox
-        android:id="@+id/checkBox"
+    <EditText
+        android:id="@+id/editTextPhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="5dp"
-        android:checked="true"
-        android:fontFamily="sans-serif-black"
+        android:hint="@string/enterPhoneHint"
+        android:inputType="phone"
         android:padding="5dp"
-        android:text="@string/checkboxExampleText"
-        android:textColor="@color/black"
         android:textSize="25sp" />
 
-    <ToggleButton
-        android:id="@+id/toggleButton"
+    <EditText
+        android:id="@+id/editTextNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="5dp"
-        android:textOff="@string/textOn"
-        android:textOn="@string/textOff" />
+        android:hint="@string/enterNumberHint"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/enterPasswordHint"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/enterEmailHint"
+        android:inputType="textEmailAddress"
+        android:padding="5dp"
+        android:textSize="25sp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/editTextButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="5dp"
-        android:text="@string/buttonExampleText" />
+        android:text="@string/switchToMainLayout" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 </LinearLayout>

@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">Android 1</string>
+    <string name="app_name">Homework 1</string>
+    <string name="textViewExampleText">Пример TextView</string>
+    <string name="editTextExampleText">Пример поля EditText</string>
+    <string name="buttonExampleText">Переключиться на экран EditText</string>
+    <string name="switchCompatExampleText">Пример элемента SwitchCompat</string>
+    <string name="checkboxExampleText">Пример CheckBox</string>
+    <string name="textOn">Включено</string>
+    <string name="textOff">Выключено</string>
+    <string name="enterEmailHint">name@host.com</string>
+    <string name="enterPasswordHint">Введите пароль</string>
+    <string name="enterTextHint">Введите текст</string>
+    <string name="enterNameHint">Введите имя</string>
+    <string name="enterPhoneHint">Введите номер телефона</string>
+    <string name="enterNumberHint">Введите число</string>
+    <string name="switchToMainLayout">Вернуться на начальный экран</string>
 </resources>
